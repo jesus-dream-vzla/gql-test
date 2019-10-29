@@ -12,6 +12,5 @@ const app = express();
 server.applyMiddleware({ app });
 
 app.listen(3000, function () {
-    
-    console.log('Servidor iniciado.');
+    console.log('Graphql server initiated.');
 });
