@@ -1,0 +1,16 @@
+type User {
+    id: Int!
+    name: String!
+    role: String!
+}
+
+type Query {
+    listUsers(last: Int): [User!]!
+    findById(id: Int!): User!
+}
+
+type Mutation {
+    createUser(name: String!, role: String!): User!
+    updateUser(id: Int!, name: String!, role: String!): User!
+    deleteUser(id: Int!): Int!
+}
