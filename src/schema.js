@@ -7,10 +7,12 @@ export const typeDefs = gql`
         role: String!
     }
     type Query{
-        listUsers(last: Int!): [User!]!
+        listUsers(last: Int): [User!]!
+        showUser(name: String!): User!
     }
     type Mutation {
         createUser(name: String!, role: String!): User!
         deleteUser(name: String!): String!
+        updateUser(name: String!, role: String!): User!
     }
 `
